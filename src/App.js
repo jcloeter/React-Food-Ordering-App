@@ -2,7 +2,7 @@ import "./App.css";
 import Header from "./componenets/Header/Header";
 import Description from "./componenets/Description/Description";
 import Menu from "./componenets/Menu/Menu";
-import Background from "./componenets/UI/Background";
+// import Background from "./componenets/UI/Background";
 
 function App() {
   return (

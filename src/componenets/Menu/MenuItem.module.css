@@ -1,0 +1,8 @@
+.menu_item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  border-bottom: solid rgb(168, 167, 167) 1.5px;
+  padding: 1rem 2rem;
+}

@@ -1,1 +1,13 @@
+.cart {
+  background-color: rgb(116, 15, 15);
+  padding: 1.2rem 4rem;
+}
 
+.cart_amount {
+  background-color: brown;
+  margin-left: 1rem;
+  padding: 0.8rem 1.4rem;
+  border-radius: 50%;
+  font-size: 1.7rem;
+  font-weight: 600;
+}

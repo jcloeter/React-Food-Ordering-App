@@ -1,3 +1,7 @@
 .menu {
   background-color: #fff;
+  padding: 1rem;
+  width: 90%;
+  max-width: 80rem;
+  margin: auto;
 }

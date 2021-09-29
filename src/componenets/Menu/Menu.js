@@ -7,6 +7,9 @@ const Menu = () => {
   return (
     <Card className={styles.menu}>
       <MenuItem />
+      <MenuItem />
+      <MenuItem />
+      <MenuItem />
     </Card>
   );
 };

@@ -5,7 +5,7 @@ import Order from "./Order";
 
 const MenuItem = () => {
   return (
-    <div>
+    <div className={styles.menu_item}>
       <Dish />
       <Order />
     </div>

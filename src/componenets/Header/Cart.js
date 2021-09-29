@@ -1,8 +1,14 @@
 import React from "react";
+import Button from "../UI/Button";
 import styles from "./Cart.module.css";
 
 const Cart = () => {
-  return <div>Your Cart</div>;
+  return (
+    <Button className={styles.cart}>
+      Your Cart
+      <span className={styles.cart_amount}>2</span>
+    </Button>
+  );
 };
 
 export default Cart;
