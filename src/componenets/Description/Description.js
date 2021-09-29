@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "./Description.module.css";
+import Card from "../UI/Card";
 
 const Description = () => {
   return (
-    <>
+    <Card className={styles.description}>
       <h3>React Meals: Clients- we're on your side!</h3>
       <div>
         Here at React Meals we aren't bland vanilla, we render services faster
@@ -19,7 +20,7 @@ const Description = () => {
         </a>
         !
       </div>
-    </>
+    </Card>
   );
 };
 
