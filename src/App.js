@@ -2,6 +2,7 @@ import "./App.css";
 import Header from "./componenets/Header/Header";
 import Description from "./componenets/Description/Description";
 import Menu from "./componenets/Menu/Menu";
+import menuMaster from "./Menu-Master/menuMaster";
 // import Background from "./componenets/UI/Background";
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
     <div className="App">
       <Header />
       <Description />
-      <Menu />
+      <Menu menuMaster={menuMaster} />
     </div>
   );
 }
