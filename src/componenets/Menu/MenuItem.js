@@ -5,11 +5,18 @@ import Order from "./Order";
 
 const MenuItem = (props) => {
   const { name, description, price } = props.menuObj;
-  console.log(price);
+
+  const onAddOrderHandler = function (orderObj) {
+    console.log(orderObj);
+    props.onAddOrder(orderObj);
+  };
   return (
     <div className={styles.menu_item}>
       <Dish name={name} description={description} price={price} />
-      <Order />
+      <Order
+        onAddOrderQuantity={onAddOrderHandler}
+        menuObject={props.menuObj}
+      />
     </div>
   );
 };

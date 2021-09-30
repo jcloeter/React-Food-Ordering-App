@@ -2,11 +2,11 @@ import React from "react";
 import styles from "./Header.module.css";
 import Cart from "./Cart";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <header className={styles.header}>
       <h1>ReactMeals</h1>
-      <Cart />
+      <Cart orderObj={props.order} />
     </header>
   );
 };
