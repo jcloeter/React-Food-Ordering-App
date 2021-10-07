@@ -11,3 +11,11 @@
   font-size: 1.7rem;
   font-weight: 600;
 }
+
+.empty {
+  background-color: rgb(100, 92, 92);
+}
+
+.empty .cart_amount {
+  background-color: rgb(148, 118, 118);
+}
