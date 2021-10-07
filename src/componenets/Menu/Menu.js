@@ -10,7 +10,9 @@ const Menu = (props) => {
   return (
     <Card className={styles.menu}>
       {props.menuMaster.map((item) => {
-        return <MenuItem menuObj={item} onAddOrder={addOrderHandler} />;
+        return (
+          <MenuItem menuObj={item} onAddOrder={addOrderHandler} key={item.id} />
+        );
       })}
     </Card>
   );

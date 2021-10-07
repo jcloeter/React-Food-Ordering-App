@@ -1,17 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
+import CartData from "../../store/cartData";
 import Button from "../UI/Button";
 import styles from "./Cart.module.css";
 
 const Cart = (props) => {
-  const cartNumber = props.orderObj
-    .map((obj) => {
-      return obj.quantity;
-    })
-    .reduce((acc, num) => Number(num) + Number(acc));
+  const cartCtx = useContext(CartData);
+
   return (
-    <Button className={styles.cart}>
+    <Button onClick={cartCtx.onShowModal} className={styles.cart}>
       Your Cart
-      <span className={styles.cart_amount}>{cartNumber}</span>
+      <span className={styles.cart_amount}>{cartCtx.cartNumber}</span>
     </Button>
   );
 };

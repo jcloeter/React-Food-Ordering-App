@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import CartData from "../../store/cartData";
 import Button from "../UI/Button";
 import styles from "./Order.module.css";
 
 const Order = (props) => {
   const [inputQuantity, setInputQuantity] = useState(0);
+  const ctx = useContext(CartData);
+  console.log(ctx);
 
   const inputChangeHandler = function (e) {
     console.log(e.target.value);
@@ -14,7 +17,7 @@ const Order = (props) => {
     e.preventDefault();
     if (inputQuantity < 1) return;
     const orderInfo = { quantity: inputQuantity, ...props.menuObject };
-    props.onAddOrderQuantity(orderInfo);
+    ctx.onAddOrder(orderInfo);
     setInputQuantity(0);
   };
   return (
@@ -31,7 +34,9 @@ const Order = (props) => {
           placeholder="0"
         />
       </label>
-      <Button type="submit">+ Add</Button>
+      <Button type="submit" onClick={ctx.onShowModal}>
+        + Add
+      </Button>
     </form>
   );
 };
